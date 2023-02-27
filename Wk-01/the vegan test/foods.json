@@ -1,0 +1,60 @@
+{
+    "menu": [
+        {
+            "name": "fruit salad",
+            "vegan": true,
+            "glutenFree": true,
+            "nutFree": true,
+            "noOnionAndGarlic": true
+        },
+        {
+            "name": "tofurkey",
+            "vegan": true,
+            "glutenFree": false,
+            "nutFree": true,
+            "noOnionAndGarlic": false
+        },
+        {
+            "name": "steak",
+            "vegan": false,
+            "glutenFree": true,
+            "nutFree": true,
+            "noOnionAndGarlic": false
+        },
+        {
+            "name": "pork chops",
+            "vegan": false,
+            "glutenFree": true,
+            "nutFree": false,
+            "noOnionAndGarlic": false
+        },
+        {
+            "name": "fried rice",
+            "vegan": false,
+            "glutenFree": true,
+            "nutFree": false,
+            "noOnionAndGarlic": false
+        },
+        {
+            "name": "cheese burger",
+            "vegan": false,
+            "glutenFree": false,
+            "nutFree": true,
+            "noOnionAndGarlic": false
+        },
+        {
+            "name": "fries",
+            "vegan": true,
+            "glutenFree": true,
+            "nutFree": true,
+            "noOnionAndGarlic": true
+        },
+        {
+            "name": "bacon",
+            "vegan": false,
+            "glutenFree": true,
+            "nutFree": true,
+            "noOnionAndGarlic": true
+        }
+    ]
+}
