@@ -24,7 +24,7 @@ function buttonRemoveTopItem(){
     // itemList.pop();
     // itemList = itemList.reverse();
 
-    itemList = itemList.splice(1,itemList.length);
+    itemList.splice(0,1);
     populateList();
     return;
 }
@@ -36,21 +36,29 @@ function buttonClear(){
     return;
 }
 
-function deleteThisEntry(element, index){
-    element.remove();
+function deleteThisEntry(index){
     itemList.splice(index,1);
+    populateList();
     return;
 }
 
 function populateList(){
     let ul = document.getElementById("ul_shoppingList");
     ul.innerHTML = "";
-    for(index in itemList){
+    for(let index in itemList){ // the "let" is what 'lets' me avoid using  .bind()
         let li = document.createElement("li");
+        let button = document.createElement("button");
+
         li.appendChild(document.createTextNode(itemList[index]));
+        li.appendChild(button);
+        button.innerText = "Delete me!";
+        button.addEventListener("click", ()=>{deleteThisEntry(index)});
+        
         // https://stackoverflow.com/a/38860151
-        li.addEventListener("click", deleteThisEntry.bind(this,li,index),false);
+        // button.addEventListener("click", deleteThisEntry.bind(this,index),false);
+        
         ul.appendChild(li);
     }
+
     return;
 }
