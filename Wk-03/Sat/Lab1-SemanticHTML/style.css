@@ -1,0 +1,24 @@
+img {
+    width: 640px;
+    border-radius: 15px;
+    border-style: double;
+    border-color: purple;
+    border-width: 5px;
+}
+html{
+    background-color: #f1b5f0;
+    opacity: 1;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+body{
+    text-align: center;
+    color: red;
+    background-color: #fdfbfe;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fdfbfe 35px ), repeating-linear-gradient( #f1b5f055, #f1b5f0 );
+    border-radius: 25px;
+}
+header{
+    margin: 0px auto;
+    padding: 20px 20px 0px 0px;
+}

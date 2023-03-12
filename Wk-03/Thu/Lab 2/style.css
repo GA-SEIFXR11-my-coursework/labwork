@@ -1,0 +1,25 @@
+.dice{
+    width: 128px;
+    height: 128px;
+    text-align: center;
+    background-color: none;
+    border-radius: 10px;
+    border: solid 1px blue;
+    font-size: 2em;
+    color: red;
+    background-color: none;
+    background-size: contain;
+}
+.diceBlock{
+    width: 320px;
+    height: 128px;
+    display: inline-block;
+    border: solid 1px black;
+}
+.diceBlock button{
+    height: 2em;
+    margin: auto 0.5em;
+}
+ul{
+    list-style: decimal;
+}

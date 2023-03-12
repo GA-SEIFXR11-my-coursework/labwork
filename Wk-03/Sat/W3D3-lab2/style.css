@@ -1,0 +1,36 @@
+body{
+    margin: 0px auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: #656565;
+    max-width: 1000px;
+    background-color: white;
+}
+header{
+    padding: 10px;
+    text-align: center;
+}
+main{
+    padding: 10px;
+}
+footer img{
+    border-style: solid;
+    border-width: 3px;
+    border-color: grey;
+    margin: 5px;
+}
+
+@media (max-width: 1000px) {
+    header img{
+        min-width: 25%;
+    }
+    .showcase img{
+        width: 100%;
+    }
+    footer img{
+        min-width: 25%;
+    }
+    body{
+        font-size: 16px;
+    }
+}

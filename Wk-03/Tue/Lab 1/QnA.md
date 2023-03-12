@@ -44,9 +44,7 @@ or
 
 ## What code adds a new property called "missions" and set it equal to an empty object?
 
-Thanks [some random forum reply](https://forum.freecodecamp.org/t/adding-empty-properties-to-an-object/339839/5)
-
-```ship.hasOwnProperty("missions")```
+```ship.missions = {}```
 
 ## How do we add "smuggled cargo" to the missions with "prisoners" and "unobtanium" in an array as the value?
 
