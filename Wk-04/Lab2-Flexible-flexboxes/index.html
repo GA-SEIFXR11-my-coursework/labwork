@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Games</title>
+</head>
+<body>
+    <button id="game-button">Add a game poster</button>
+    <ol id="game-list"></ol>
+    
+    <script>
+        let index = 0;
+
+        // Find the HTML elements
+        let gameList = document.getElementById('game-list');
+        let gameButton = document.getElementById('game-button');
+        let minOrder = 0;
+
+        // When the game button is clicked...
+        gameButton.addEventListener('click', function() {
+            // Add a list item with a game poster inside of it
+            let item = document.createElement('li');
+            let game = document.createElement('img');
+            //game.src = `https://api.lorem.space/image/game?w=150&h=220&i=${index}`;
+            game.src = `https://api.lorem.space/image/game?w=270&h=396&i=${index}`;
+            item.appendChild(game);
+            gameList.appendChild(item);
+
+            // event listener to bump element up to start
+            item.addEventListener("click", (e) => {
+                minOrder--;
+                item.style.order = minOrder;
+                console.log(`asdf ${item.style.order}`);
+                return;
+            });
+
+            // This index ensures we get different game posters each time
+            index++;
+        })
+
+    </script>
+
+</body>
+</html>

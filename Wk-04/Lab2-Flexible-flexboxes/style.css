@@ -1,0 +1,10 @@
+ol{
+    display: flex;
+    /* list-style: none; */
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+ol li{
+    padding: 10px;
+}
