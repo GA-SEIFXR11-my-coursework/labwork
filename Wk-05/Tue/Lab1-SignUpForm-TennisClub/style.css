@@ -1,0 +1,26 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(38, 34, 34);
+    color:aquamarine;
+}
+body{
+    width: 80%;
+    border: solid 1px greenyellow;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+}
+form{
+    display: inline-table;
+}
+form .form-question{
+    min-height: 5vh;
+    margin: 2vh;
+    border: solid 1px greenyellow;
+    font-size: 1rem;
+}
+#user-details input{
+    display: list-item;
+    margin: 10px;
+}

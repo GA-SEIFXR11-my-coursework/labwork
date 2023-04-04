@@ -1,0 +1,24 @@
+
+body{
+    max-width: 80%;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 40px;
+    padding: 3%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+div ~ p {
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 30px;
+    max-width: 50%;
+    margin-inline: auto;
+  }
+  
+  #cssSelector{
+    overflow: hidden;
+    max-width: 50%;
+    margin: auto;
+}

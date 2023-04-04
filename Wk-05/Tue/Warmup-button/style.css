@@ -1,0 +1,20 @@
+nav button{
+    width: 20em;
+    height: 4em;
+    margin: 20px;
+    color: darkred;
+    background-color: burlywood;
+}
+nav button:disabled{
+    background-color: silver;
+    color: azure;
+}
+nav{
+    display: inline-flex;
+}
+nav div{
+    display: inline-block;
+}
+#s_cookies img{
+    width: 32px;
+}

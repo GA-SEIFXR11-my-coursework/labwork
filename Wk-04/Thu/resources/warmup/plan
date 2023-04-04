@@ -1,0 +1,27 @@
+Step 1:
+
+We need 3 arrays for street, suburb and states
+
+Step 2:
+
+Generate a random number
+
+
+Step 3:
+
+Randomly select an address using the generated number from step 2.
+
+
+Step 4:
+
+Create a new html element and append the generated address onto it
+
+
+Step 5:
+
+Delete the previous address, if it exists
+
+
+Step 6:
+
+Append the new element to html

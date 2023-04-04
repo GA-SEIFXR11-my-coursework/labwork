@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Direct Child Selector</title>
+</head>
+<body>
+    <h2>Direct Child Selector (>)</h2>
+    <p>This selector targets all the elements that are direct children of a specified element.</p>
+
+    <div>
+    <p>Paragraph 1 under the div element.</p>
+    <p>Paragraph 2 under the div element.</p>
+    <section>
+        <!-- not Child but Descendant -->
+        <p>Paragraph 3 under the div element.</p>
+    </section>
+    <p>Paragraph 4 under the div element.</p>
+    </div>
+
+    <p>Paragraph 5, not under the div element.</p>
+    <p>Paragraph 6, not under the div element.</p>
+
+    <hr/>
+    <div id="cssSelector">
+        <h3>
+            <u> CSS used for the target element(s) </u>
+        </h3>
+        <pre><code class="language-css">          
+            div > p {
+                background-color: yellow;
+                padding: 5px;
+                border-radius: 30px;
+                max-width: 50%;
+                margin-inline: auto;
+              }
+            </code></pre>
+    </div>
+</body>
+</html>

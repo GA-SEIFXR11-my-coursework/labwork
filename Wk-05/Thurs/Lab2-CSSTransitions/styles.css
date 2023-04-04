@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+body {
+  margin: 40px;
+  font-family: "Special Elite";
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: flex-end;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+nav {
+  width: 100%;
+}
+
+nav > ul > li {
+  flex-grow: 1;
+  display: inline-block;
+  height: 100%;
+}
+.silhouette{
+  opacity: 20%;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.silhouette:hover{
+  transform: scale(1.5);
+  transition: transform 1s ease, opacity 1s linear;
+}
+.selected{
+  opacity: 100%;
+}
+img {
+  width: 100%;
+}
+
+main {
+  padding: 40px 0;
+}
+
+#display {
+  max-width: 700px;
+  margin: auto;
+  line-height: 2;
+}
+
+header > h1{
+  animation: shakalaka 1s ease;
+  animation-iteration-count: infinite;
+}
+
+/* https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition */
+#display > img{
+  animation: slide-in 0.5s ease;
+  -webkit-animation: slide-in 0.5s ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes slide-in {
+  0% { transform: translateX(-20%); }
+  100% { transform: translateX(0%) ; }
+}
+
+@-webkit-keyframes slide-in {
+  0% { -webkit-transform: translateX(-20%); }
+  100% { -webkit-transform: translateX(0%); }
+}
+
+/* https://www.w3schools.com/howto/howto_css_shake_image.asp */
+@keyframes shakalaka {
+  0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+  10% { transform: translate(-0.5px, -1px) rotate(-1deg); }
+  20% { transform: translate(-1.5px, 0px) rotate(1deg); }
+  30% { transform: translate(1.5px, 1px) rotate(0deg); }
+  40% { transform: translate(0.5px, -0.5px) rotate(1deg); }
+  50% { transform: translate(-0.5px, 1px) rotate(-1deg); }
+  60% { transform: translate(-1.5px, 0.5px) rotate(0deg); }
+  70% { transform: translate(1.5px, 0.5px) rotate(-1deg); }
+  80% { transform: translate(-0.5px, -0.5px) rotate(1deg); }
+  90% { transform: translate(0.5px, 1px) rotate(0deg); }
+  100% { transform: translate(0.5px, -1px) rotate(-1deg); }
+}
