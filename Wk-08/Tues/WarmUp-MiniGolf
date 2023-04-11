@@ -1,0 +1,24 @@
+import re
+
+def prompt_9_ints(prompt: str) -> list[int]:
+    ret: list[int] = []
+    regex = r'^(\d{1,2},){8}\d{1,2}$'
+    while( True ):
+        response = input(prompt)
+        if re.match(regex, response):
+            break
+        else:
+            print("Invalid input, must be 9 ints seperated by commas-only (no spaces).")
+    for num in response.split(','):
+        ret.append(int(num))
+    return ret
+
+if __name__ == "__main__":
+    score_list = prompt_9_ints("Enter score: ")
+    total = sum(score_list)
+    print(f'Total: {total}')
+    
+    # Minimalist solution:
+    # resp = input("Enter Score: ")
+    # nums = [int(x) for x in resp.split(',')]
+    # print(f'Total: {sum(nums)}')
