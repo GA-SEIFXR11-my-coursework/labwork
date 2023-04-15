@@ -9,6 +9,8 @@ function isLeapYear(year: number): boolean{
     // Unless it is also divisible by 400 is a leap year
 
     let rem: number;
+    rem = year % 400;
+    if(rem == 0){ return true };
 
     rem = year % 100;
     if(rem == 0){ return false };
@@ -20,7 +22,7 @@ function isLeapYear(year: number): boolean{
 }
 
 function testLeapYear(){
-    const myTests = {
+    const _myTests = {
         0: { "input"    : 2100,
             "expected"  : false,
         },
@@ -46,19 +48,20 @@ function testLeapYear(){
 
     function _testLeapYear(Tests){
         let passedAllTests: boolean = true;
-        for(let test of Tests){
+        for(let key in Object.keys(Tests)){
+            let test = Tests[key]
             if( isLeapYear(test.input) != test.expected ){
                 passedAllTests = false;
                 console.log(`FAIL: test Input: ${test.input} \t Expected: ${test.expected}`)
             }
         }
         if(passedAllTests){
-            console.log(`OK All ${Object.keys(myTests).length} tests passed`);
+            console.log(`OK All ${Object.keys(Tests).length} tests passed`);
         }
         return;
     }
 
-    _testLeapYear(myTests);
+    _testLeapYear(_myTests);
 }
 
 testLeapYear();
