@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body_content %}
+    <p>You cannot bring your luggage on board. Reasons:</p>
+    <ul>
+    {% for reason in reasons %}
+        <li>{{ reason }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

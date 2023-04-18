@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block body_content %}
+    <form method="GET" action="/result">
+        <label for="height-input">Height(cm) :</label>
+        <input type="number" id="height-input" name="height_cm">
+
+        <label for="width-input">Width(cm) :</label>
+        <input type="text" id="width-input" name="width_cm">
+        
+        <label for="depth-input">Depth(cm) :</label>
+        <input type="text" id="depth-input" name="depth_cm">
+        
+        <label for="weight-input">Weight(kg) :</label>
+        <input type="text" id="weight-input" name="weight_kg">
+        
+        <input type="submit">
+    </form>
+{% endblock %}
