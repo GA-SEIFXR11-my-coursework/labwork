@@ -4,6 +4,7 @@
 # ignore because this is a shared repo
 .gitignore
 .vscode
+.password
 
 ### macOS ###
 # General
