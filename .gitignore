@@ -5,6 +5,7 @@
 .gitignore
 .vscode
 .password
+.env
 
 ### macOS ###
 # General
