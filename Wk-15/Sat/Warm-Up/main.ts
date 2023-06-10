@@ -9,6 +9,7 @@ dedupe([1, 1, 1, 1], 2) // returns [1, 1]
 dedupe([20, 37, 20, 21], 1) // returns [20, 37, 21]
 
 */
+type T_OccurTable = { [key: number]: number };
 
 function dedupe(numArr: number[], maxOccurrences: number){
     // check element occurences as they are read
@@ -17,11 +18,12 @@ function dedupe(numArr: number[], maxOccurrences: number){
     }
     maxOccurrences = Math.floor(maxOccurrences);
 
-    let occurenceTable: {[key: number]: number} = {};
+    let occurenceTable: T_OccurTable = {};
     let ret: number[] = [];
+    let keys: (keyof T_OccurTable)[] = [];
     for(let num of numArr){
-        let keys = Object.keys(occurenceTable).map((val)=>{return Number(val)});
-        if(! keys.includes(num) ){
+        keys = Object.keys(occurenceTable).map( x => Number(x) );
+        if( ! keys.includes(num) ){
             ret.push(num);
             occurenceTable = {...occurenceTable, [num]: 1};
             continue;
