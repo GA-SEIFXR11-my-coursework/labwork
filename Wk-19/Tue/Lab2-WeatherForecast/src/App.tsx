@@ -1,7 +1,7 @@
 import { weatherConditions } from "./weatherConditions";
-import Forecast from "./components/Forecast";
+import Forecast, {ForecastProp} from "./components/Forecast";
 
-const forecasts = [
+const forecasts: ForecastProp[] = [
   {
     day: "Monday",
     conditions: weatherConditions.sunny,
