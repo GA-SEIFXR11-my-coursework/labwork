@@ -8,10 +8,7 @@ export default function TrafficLights(props: T_TrafficLightsProps){
   const {whichLight} = props;
 
   function applyLight(light: T_trafficLightStatesVals){
-    if(whichLight === light){
-      return "on"
-    }
-    return "";
+    return (whichLight === light) ? "on" : "";
   }
 
   return (
