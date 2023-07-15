@@ -1,0 +1,65 @@
+.app {
+  max-width: 480px;
+  padding: 0;
+  margin: 3em;
+  font: 18px/1.5 sans-serif;
+  color: #333;
+  display: flex;
+  gap: 1em;
+}
+
+#control-panel {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+button {
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #555;
+  color: #eee;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+button:active {
+  background-color: #333;
+  color: #ddd;
+}
+
+#traffic-lights {
+  width: 200px;
+  height: 550px;
+  padding: 20px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #555;
+}
+
+.bulb {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #333;
+  transition: background-color 500ms;
+}
+
+#stop-light.on {
+  background: red;
+}
+
+#slow-light.on {
+  background: yellow;
+}
+
+#go-light.on {
+  background: green;
+}
