@@ -1,0 +1,19 @@
+.breed {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+  background: #f6f6f6;
+}
+
+.breed-info {
+  width: 100%;
+  padding-left: 1em;
+  border: 1px solid #ddd;
+  border-left: none;
+}
+
+.breed-stats {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}

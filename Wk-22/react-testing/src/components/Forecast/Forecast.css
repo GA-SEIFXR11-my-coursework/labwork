@@ -1,0 +1,77 @@
+.forecast {
+  max-width: 180px;
+  padding: 1em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgb(0, 0, 0, 0.16), 0 3px 6px rgb(0, 0, 0, 0.23);
+  color: #999;
+}
+
+.forecast p, .forecast h3 {
+  margin: 0.25em;
+}
+
+.forecast .emoji {
+  font-size: 5em;
+  text-align: center;
+  filter: grayscale(50%);
+}
+
+.forecast .details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forecast .temperature {
+  flex-basis: 100%;
+  font-size: 2.5em;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.forecast .conditions {
+  text-transform: capitalize;
+  border-right: 1px solid #ccc;
+  padding-right: 0.5em;
+  margin-right: 0.25em;
+}
+
+.forecast .day {
+  text-transform: uppercase;
+}
+
+.forecast .warnings {
+  margin-top: 1em;
+  position: relative;
+  text-align: center;
+}
+
+.forecast .warnings::after {
+  content: '';
+  width: calc(100% + 2em);
+  height: calc(100% + 1em);
+  position: absolute;
+  left: -1em;
+  bottom: -1em;
+  z-index: 0;
+  background: #e63946;
+}
+
+.warning {
+  position: relative;
+  top: .5em;
+  z-index: 1;
+  color: #f6f6f6;
+  font-size: 0.8em;
+}
+
+.warning + .warning {
+  padding-left: 0.5em;
+  border-left: 1px solid #f6f6f6;
+  margin-left: 0.5em;
+}
