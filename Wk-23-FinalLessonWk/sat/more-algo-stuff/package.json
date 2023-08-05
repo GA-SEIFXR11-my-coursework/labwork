@@ -1,0 +1,17 @@
+{
+  "name": "more-algo-stuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.7",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1"
+  }
+}
